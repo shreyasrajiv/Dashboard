@@ -28,7 +28,7 @@ myApp.Tile = {
 		var connected = 0,
 			disconnected = 0,
 			maxYield = 0,
-			minYield = Number.MAX_SAFE_INTEGER;
+			minYield = Number.MAX_SAFE_INTEGER || 999999999999999;
 
 		for(var i = 0; i < myApp.data.inverters.length; i++) {
 			if (myApp.data.inverters[i].connected === "connected") {
